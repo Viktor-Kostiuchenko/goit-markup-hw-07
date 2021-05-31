@@ -958,7 +958,7 @@ ol {
   margin-bottom: 30px;
 }
 
-.policy .form__input {
+.policy .form__checkbox {
   margin-right: 7px;
 }
 
@@ -981,39 +981,6 @@ ol {
   padding: 10px 55px;
 }
 
-/*? вариант задать чекбокс через css в background-image*/
-
-/* .form-checkbox-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-
-  border: 2px solid var(--black-icon-color);
-  border-radius: 2px;
-
-  transform: scale(1);
-  transition: transform var(--duration-timing-function),
-    background-color var(--duration-timing-function),
-    border-color var(--duration-timing-function);
-
-  cursor: pointer;
-
-  fill: var(--primary-white-color);
-}
-
-.form-checkbox:checked + .form-checkbox-icon {
-  border-color: transparent;
-  background-image: url(../images/icons/check.svg);
-  background-color: var(--accent-color);
-  background-size: contain;
-  background-origin: border-box;
-
-  transform: scale(1.2);
-} */
-
-/*? вариант задать чекбокс через svg в html */
-
 .form__icon-checkbox {
   margin-right: 8px;
 
@@ -1026,8 +993,6 @@ ol {
     border-color var(--duration-timing-function);
 
   cursor: pointer;
-
-  fill: var(--primary-white-color);
 }
 
 .form__checkbox:checked + .form__icon-checkbox {
@@ -1041,7 +1006,6 @@ ol {
 .form__checkbox:focus + .form__icon-checkbox {
   outline: -webkit-focus-ring-color auto 1px;
 }
-
 /* ! ================================THE END OF A MODAL WINDOW================================ */
 
 /** Поставил анимашку лого при переходе на главную страницу */
