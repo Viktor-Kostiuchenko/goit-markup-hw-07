@@ -114,20 +114,6 @@ ol {
   padding: 94px 0;
 }
 
-.section.traits {
-  padding-top: 94px;
-  padding-bottom: 47px;
-}
-
-.section.activity {
-  padding-top: 47px;
-  padding-bottom: 94px;
-}
-
-.section.staff {
-  padding: 94px 0;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -344,6 +330,11 @@ ol {
 }
 
 /** Traits */
+.traits {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
 .feature-list {
   display: flex;
 }
@@ -376,6 +367,11 @@ ol {
 }
 
 /** Activity */
+.activity {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
 .service-list {
   display: flex;
 }
@@ -417,6 +413,7 @@ ol {
 /** Staff */
 
 .staff {
+  padding: 94px 0;
   background-color: var(--primary-bcg-color);
 }
 
@@ -864,7 +861,7 @@ ol {
 
 /* ! ================================MODAL FORM================================ */
 
-.modal-call {
+.form__call {
   display: block;
   margin-bottom: 12px;
 
@@ -877,7 +874,7 @@ ol {
   color: var(--title-text-color);
 }
 
-.form-field {
+.form__field {
   display: flex;
   flex-direction: column;
   width: 448px;
@@ -886,7 +883,7 @@ ol {
   position: relative;
 }
 
-.form-input {
+.form__input {
   outline: none;
   border: var(--input-border);
   border-radius: 4px;
@@ -897,28 +894,29 @@ ol {
   transition: border-color var(--duration-timing-function);
 }
 
-.form-icon {
-  display: inline-block;
+.form__icon {
   position: absolute;
+  display: inline-block;
+
   top: 29px;
   left: 12px;
 
   transition: fill var(--duration-timing-function);
 }
 
-.form-field:focus-within > .form-icon,
-.form-field:hover > .form-icon {
+.form__field:focus-within .form__icon,
+.form__field:hover .form__icon {
   fill: var(--accent-color);
 }
 
-.form-input:focus,
-.form-textarea:focus,
-.form-input:hover,
-.form-textarea:hover {
+.form__input:focus,
+.form__textarea:focus,
+.form__input:hover,
+.form__textarea:hover {
   border-color: var(--accent-color);
 }
 
-.form-label {
+.form__label {
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -928,11 +926,11 @@ ol {
   color: var(--primary-text-color);
 }
 
-.form-field.comment {
+.comment {
   margin-bottom: 20px;
 }
 
-.form-textarea {
+.form__textarea {
   resize: none;
   padding: 12px 16px;
 
@@ -945,7 +943,7 @@ ol {
   transition: border-color var(--duration-timing-function);
 }
 
-.form-textarea::placeholder {
+.form__textarea::placeholder {
   font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -953,18 +951,18 @@ ol {
   color: var(--placeholder-color);
 }
 
-.form-field.policy {
+.policy {
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.policy .form-input {
+.policy .form__input {
   margin-right: 7px;
 }
 
-.policy .form-label {
+.policy .form__label {
   display: block;
   margin-bottom: 0px;
 
@@ -975,7 +973,7 @@ ol {
   color: var(--primary-text-color);
 }
 
-.checkbox-link {
+.form__link {
   color: var(--accent-color);
 }
 
@@ -985,7 +983,7 @@ ol {
 
 /*? вариант задать чекбокс через css в background-image*/
 
-/* .checkbox-icon {
+/* .form-checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -1004,7 +1002,7 @@ ol {
   fill: var(--primary-white-color);
 }
 
-.checkbox:checked + .checkbox-icon {
+.form-checkbox:checked + .form-checkbox-icon {
   border-color: transparent;
   background-image: url(../images/icons/check.svg);
   background-color: var(--accent-color);
@@ -1016,7 +1014,7 @@ ol {
 
 /*? вариант задать чекбокс через svg в html */
 
-.checkbox-icon {
+.form__icon-checkbox {
   margin-right: 8px;
 
   border: 2px solid var(--black-icon-color);
@@ -1032,7 +1030,7 @@ ol {
   fill: var(--primary-white-color);
 }
 
-.checkbox:checked + .checkbox-icon {
+.form__checkbox:checked + .form__icon-checkbox {
   border-color: transparent;
 
   background-color: var(--accent-color);
@@ -1040,7 +1038,7 @@ ol {
   transform: scale(1.2);
 }
 
-.checkbox:focus + .checkbox-icon {
+.form__checkbox:focus + .form__icon-checkbox {
   outline: -webkit-focus-ring-color auto 1px;
 }
 
@@ -1071,6 +1069,6 @@ ol {
 
 .animation {
   animation-name: beat;
-  animation-duration: 1000ms;
+  animation-duration: 750ms;
   animation-timing-function: ease-in-out;
 }
