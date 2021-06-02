@@ -1,0 +1,82 @@
+/** Staff */
+
+.staff {
+  padding: 94px 0;
+  background-color: var(--primary-bcg-color);
+}
+
+.employee {
+  display: flex;
+  margin-right: calc(-1 * var(--item-gap));
+}
+
+.employee__card {
+  flex-basis: calc(100% / 4 - var(--item-gap));
+
+  width: 270px;
+  background-color: var(--primary-white-color);
+  box-shadow: var(--team-member-shadow);
+  border-radius: 1px;
+}
+
+.employee__card:not(:last-child) {
+  margin-right: var(--item-gap);
+}
+
+.employee__info {
+  padding: 30px 0;
+}
+
+.employee__name {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.employee__position {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__network {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  background-color: var(--primary-white-color);
+
+  transition: background-color var(--duration-timing-function);
+}
+
+.social-list__icon {
+  fill: var(--primary-icon-color);
+  transition: fill var(--duration-timing-function);
+}
+
+.social-list__network:hover,
+.social-list__network:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list__network:hover .social-list__icon,
+.social-list__network:focus .social-list__icon {
+  fill: var(--primary-white-color);
+}

@@ -1,0 +1,36 @@
+/** Traits */
+.traits {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.feature-list {
+  display: flex;
+}
+
+.feature-list__item {
+  width: 270px;
+}
+
+.feature-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-list__background {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  background-color: var(--primary-bcg-color);
+}
+
+.feature-list__title {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

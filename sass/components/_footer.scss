@@ -1,0 +1,127 @@
+/** Footer */
+.footer {
+  padding: 60px 0;
+
+  background-color: var(--secondary-bcg-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.company-address {
+  margin-right: 70px;
+}
+
+.company-address__box {
+  margin-top: 20px;
+}
+
+.company-address__link {
+  color: var(--footer-contact-color);
+  transition: color var(--duration-timing-function);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.company-address__link--mail {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.company-address__link--location {
+  display: inline-block;
+  margin-bottom: 9px;
+
+  color: var(--primary-white-color);
+}
+
+.company-address__link:hover,
+.company-address__link:focus {
+  color: var(--accent-color);
+}
+
+.social-list__network--grey {
+  background-color: var(--network-firm-color);
+}
+
+.social-list__icon--white {
+  fill: var(--primary-white-color);
+}
+
+.company-socials__call {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  line-height: 1.17;
+}
+
+.subscription {
+  margin-left: auto;
+}
+
+.subscription__call {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  line-height: 1.17;
+}
+
+.subscription__field {
+  width: 358px;
+  margin-right: 12px;
+}
+
+.subscription__box {
+  display: flex;
+  align-items: center;
+}
+
+.subscription__form {
+  display: flex;
+}
+
+.subscription__input {
+  display: block;
+  min-height: 50px;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+
+  color: var(--primary-white-color);
+
+  border-radius: 4px;
+  border: var(--subscription-input-border);
+  box-shadow: var(--subscription-input-shadow);
+
+  outline: none;
+
+  transition: border-color var(--duration-timing-function);
+}
+
+.subscription__input:focus,
+.subscription__input:hover {
+  border-color: var(--primary-white-color);
+}
+
+.subscription__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--subscription-placeholder-color);
+}
+
+.button--size {
+  padding: 10px 28px;
+}
+
+.button__icon {
+  margin-left: 10px;
+
+  fill: currentColor;
+
+  transition: fill var(--duration-timing-function);
+}
