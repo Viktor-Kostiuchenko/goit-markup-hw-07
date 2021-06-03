@@ -34,12 +34,6 @@ ol {
   padding-left: 0;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -52,24 +46,9 @@ ol {
 
   &__title {
     margin-bottom: 50px;
-
     color: $title-text-color;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
   }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }

@@ -3,8 +3,13 @@
   padding-bottom: 47px;
 }
 
+.traits .section__title {
+  @extend %visually-hidden;
+}
+
 .feature-list {
   display: flex;
+  @extend %list;
 }
 
 .feature-list__item {
@@ -16,10 +21,9 @@
 }
 
 .feature-list__background {
-  display: flex;
+  @include flex();
+
   height: 120px;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 30px;
 
   background-color: $primary-bcg-color;

@@ -4,6 +4,8 @@
 }
 
 .employee {
+  @extend %list;
+
   display: flex;
   margin-right: calc(-1 * 30px);
 }

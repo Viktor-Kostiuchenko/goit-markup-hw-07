@@ -1,4 +1,10 @@
+.portfolio__title {
+  @extend %visually-hidden;
+}
+
 .portfolio__list {
+  @extend %list;
+
   display: flex;
   flex-wrap: wrap;
   padding: 0;
