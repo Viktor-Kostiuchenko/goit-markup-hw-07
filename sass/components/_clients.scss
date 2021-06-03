@@ -1,11 +1,16 @@
-/** Clients */
 .client-list {
   display: flex;
   justify-content: space-between;
 }
 
 .client-list__item {
-  flex-basis: calc(100% / 6 - var(--item-gap));
+  flex-basis: calc(100% / 6 - 30px);
+}
+
+.client-list__logo {
+  fill: $primary-icon-color;
+
+  transition: fill $duration-timing-function;
 }
 
 .client-list__link {
@@ -16,22 +21,16 @@
   justify-content: center;
   border-radius: 4px;
 
-  border: 1px solid var(--primary-icon-color);
-  transition: border-color var(--duration-timing-function);
-}
+  border: 1px solid $primary-icon-color;
+  transition: border-color $duration-timing-function;
 
-.client-list__logo {
-  fill: var(--primary-icon-color);
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 
-  transition: fill var(--duration-timing-function);
-}
-
-.client-list__link:hover,
-.client-list__link:focus {
-  border-color: var(--accent-color);
-}
-
-.client-list__link:hover .client-list__logo,
-.client-list__link:focus .client-list__logo {
-  fill: var(--accent-color);
+  &:hover .client-list__logo,
+  &:focus .client-list__logo {
+    fill: $accent-color;
+  }
 }
