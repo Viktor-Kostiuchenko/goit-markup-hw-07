@@ -6,8 +6,7 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @include flex($cross: baseline);
 }
 
 .company-address {
@@ -16,6 +15,10 @@
 
 .company-address__box {
   margin-top: 20px;
+}
+
+.company-address__list {
+  @extend %list;
 }
 
 .company-address__link {

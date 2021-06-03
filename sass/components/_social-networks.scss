@@ -1,6 +1,6 @@
 .social-list {
-  display: flex;
-  justify-content: center;
+  @extend %list;
+  @include flex();
 }
 
 .social-list__item:not(:last-child) {
@@ -8,11 +8,10 @@
 }
 
 .social-list__network {
-  display: flex;
+  @include flex();
+
   width: 44px;
   height: 44px;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
 
   background-color: $primary-white-color;

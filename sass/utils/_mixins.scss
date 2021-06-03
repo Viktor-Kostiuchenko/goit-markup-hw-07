@@ -1,0 +1,5 @@
+@mixin flex($type: flex, $cross: center, $main: center) {
+  display: $type;
+  align-items: $cross;
+  justify-content: $main;
+}

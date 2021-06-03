@@ -1,7 +1,6 @@
 /** Button */
 .button {
-  display: flex;
-  align-items: center;
+  @include flex();
 
   min-width: 200px;
   padding: 10px 32px;

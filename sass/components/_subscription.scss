@@ -16,8 +16,7 @@
 }
 
 .subscription__box {
-  display: flex;
-  align-items: center;
+  @include flex();
 }
 
 .subscription__form {

@@ -90,9 +90,9 @@
 }
 
 .policy {
+  @include flex();
+
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -130,6 +130,8 @@
 }
 
 .form__checkbox {
+  @extend %visually-hidden;
+
   &:checked + .form__icon-checkbox {
     border-color: transparent;
     background-color: $accent-color;

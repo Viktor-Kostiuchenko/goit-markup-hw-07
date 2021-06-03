@@ -1,6 +1,6 @@
 .client-list {
-  display: flex;
-  justify-content: space-between;
+  @extend %list;
+  @include flex($main: space-between);
 }
 
 .client-list__item {
@@ -14,11 +14,11 @@
 }
 
 .client-list__link {
-  display: flex;
+  @include flex();
+
   width: 170px;
   height: 92px;
-  align-items: center;
-  justify-content: center;
+
   border-radius: 4px;
 
   border: 1px solid $primary-icon-color;
