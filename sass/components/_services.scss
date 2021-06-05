@@ -1,7 +1,5 @@
-/** Activity */
-.activity {
-  padding-top: 47px;
-  padding-bottom: 94px;
+.services {
+  @include section(47px, 94px);
 }
 
 .service-list {
@@ -13,7 +11,7 @@
   width: 370px;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: $item-gap;
   }
 }
 

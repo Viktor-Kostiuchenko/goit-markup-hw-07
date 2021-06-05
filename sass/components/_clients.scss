@@ -1,10 +1,14 @@
+.clients {
+  @include section();
+}
+
 .client-list {
   @extend %list;
   @include flex($main: space-between);
 }
 
 .client-list__item {
-  flex-basis: calc(100% / 6 - 30px);
+  flex-basis: calc(100% / 6 - $item-gap);
 }
 
 .client-list__logo {
