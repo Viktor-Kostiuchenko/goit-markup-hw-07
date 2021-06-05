@@ -1,9 +1,8 @@
-.traits {
-  padding-top: 94px;
-  padding-bottom: 47px;
+.features {
+  @include section(94px, 47px);
 }
 
-.traits .section__title {
+.features .section__title {
   @extend %visually-hidden;
 }
 
@@ -16,7 +15,7 @@
   width: 270px;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: $item-gap;
   }
 }
 
@@ -24,7 +23,7 @@
   @include flex();
 
   height: 120px;
-  margin-bottom: 30px;
+  margin-bottom: $item-gap;
 
   background-color: $primary-bcg-color;
 }
